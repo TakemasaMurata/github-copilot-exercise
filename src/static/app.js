@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const spotsLeft = details.max_participants - details.participants.length;
 
-        // 参加者リストを生成（左余白追加）
+        // Generate participants list (add left margin)
         let participantsHTML = `<ul class="participants-list">`;
         details.participants.forEach(participant => {
           participantsHTML += `<li>${participant}</li>`;
